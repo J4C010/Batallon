@@ -22,6 +22,7 @@ public abstract class Vehiculo {
         this.listMisiones = new LinkedList<>();
     }
 
+
     public abstract void desplazar();
 
     public EstadoOperativo getEstadoOperativo() {
