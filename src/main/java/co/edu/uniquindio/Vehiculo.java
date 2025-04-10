@@ -11,7 +11,7 @@ public abstract class Vehiculo {
     protected EstadoOperativo estadoOperativo;
     protected LinkedList<Mision> listMisiones;
 
-    public Vehiculo(String id, String modelo, int anioFabricacion, double kilometraje, int misionesCompletadas, EstadoOperatico estadoOperativo) {
+    public Vehiculo(String id, String modelo, int anioFabricacion, double kilometraje, EstadoOperativo estadoOperativo) {
         this.id = id;
         this.modelo = modelo;
         this.anioFabricacion = anioFabricacion;
@@ -25,12 +25,15 @@ public abstract class Vehiculo {
 
     public abstract void desplazar();
 
+
     public EstadoOperativo getEstadoOperativo() {
         return estadoOperativo;
     }
+
     public void setEstadoOperativo(EstadoOperativo estadoOperativo) {
         this.estadoOperativo = estadoOperativo;
     }
+
     public String getId() {
         return id;
     }
